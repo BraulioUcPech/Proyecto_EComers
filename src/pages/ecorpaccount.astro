@@ -1,0 +1,21 @@
+---
+import LayoutAccount from "../layouts/LayoutAccount.astro";
+
+import MainAccountDashboard from "@components/MainAccountDashboard.astro";
+---
+
+<LayoutAccount title="Ecorp Account">
+  <!-- Encabezado fijo -->
+  <header></header>
+
+  <!-- Contenedor principal con padding-top para el encabezado -->
+  <div>
+    <!-- Barra lateral fija -->
+    <aside></aside>
+
+    <!-- Contenedor para el contenido principal -->
+    <main class="flex-1 ml-50 p-10">
+      <MainAccountDashboard />
+    </main>
+  </div>
+</LayoutAccount>
